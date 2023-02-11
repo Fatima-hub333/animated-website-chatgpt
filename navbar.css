@@ -1,0 +1,174 @@
+body {
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,0.5830707282913166) 58%);
+}
+
+/* General styles for the navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #c49a50;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+}
+
+/* Logo styles */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo a {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+/* Nav items styles */
+.navbar-nav {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.nav-link {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background-color: #a47c3c;
+}
+
+/* Buttons styles */
+.navbar-btns {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  padding: 8px 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.btn-search {
+  background-color: #8f6834;
+}
+
+.btn-login {
+  background-color: #5c3e20;
+  margin-left: 10px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .navbar-nav {
+    display: none;
+  }
+
+  .navbar-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-search,
+  .btn-login {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+
+/* Hero section styles */
+.hero {
+  display: flex;
+  height: 500px;
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Left section styles */
+.hero-left {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-dropdown {
+  width: 80%;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+}
+
+/* Middle section styles */
+.hero-middle {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Right section styles */
+.hero-right {
+  width: 25%;
+  padding: 20px;
+  font-size: 18px;
+  color: white;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .hero-left,
+  .hero-middle,
+  .hero-right {
+    width: 100%;
+  }
+
+  .hero-img {
+    width: 80%;
+    margin: 50px auto 10px auto;
+  }
+}
